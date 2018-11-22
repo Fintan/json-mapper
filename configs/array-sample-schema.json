@@ -1,0 +1,32 @@
+{
+    "mappings": [
+        { "from": "$.audioFile",  "to": "$.additionalSettings.audio.src" },
+        { "from": "$.audioSchema",  "to": "$.additionalSettings.audio.schema" },
+        { "from": "$.letters",  "to": "$.ids" },
+        { "from": "$.activity.options[*].title",  "to": "$.items[*].title" }
+    ],
+    "template": {
+        "ids": [],
+        "items": [
+            {
+                "itemId": "",
+                "title": "",
+                "audio": {
+                    "src": "",
+                    "tags":[0],
+                    "links":[{}]
+                },
+                "active": "",
+                "links":[0]
+            }
+        ],
+        "actives": [],
+        "additionalSettings": {
+            "selectedLocale": "en-US",
+            "audio": {
+                "src": "",
+                "schema": ""
+            }
+        }
+    }
+}

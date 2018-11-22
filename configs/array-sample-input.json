@@ -1,0 +1,29 @@
+{
+    "letters": [
+        "a", "b", "c", "d"
+    ],
+    "activity": {
+        "options": [
+            {
+                "itemId": 0,
+                "title": "a title 1",
+                "audio": {
+                    "src": "./image1.png",
+                    "tags": ["1potato", "2potato"]
+                },
+                "active": true
+            },
+            {
+                "itemId": 1,
+                "title": "a title 2",
+                "audio": {
+                    "src": "img2.jpg",
+                    "tags": ["landscape", "portrait"]
+                },
+                "active": true
+            }
+        ]
+    },
+    "audioFile": "../../audio/manifests/config.json",
+    "audioSchema": "mrq_audio_schema.json"
+}

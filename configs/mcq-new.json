@@ -1,0 +1,97 @@
+{
+    "setupArea": {
+        "activityTitle": "MCQ Multiple Select",
+        "questionStem": "Please select your option(s) below",
+        "questionStemLabel": "ZY",
+        "tip": "Tip"
+    },
+    "stimulus": {
+        "text": "",
+        "image": {
+            "src": "",
+            "altText": ""
+        },
+        "audio": {
+            "src": "",
+            "transcriptText": ""
+        }
+    },
+    "items": [
+        {
+            "itemId": 0,
+            "text": "One",
+            "image": {
+                "src":"", 
+                "altText":"",
+                "caption": ""
+            }
+        },
+        {
+            "itemId": 1,
+            "text": "Two",
+            "image": {
+                "src":"", 
+                "altText":"",
+                "caption": ""
+            }
+        },
+        {
+            "itemId": 2,
+            "text": "Three",
+            "image": {
+                "src":"", 
+                "altText":"",
+                "caption": ""
+            }
+        },
+        {
+            "itemId": 3,
+            "text": "Four",
+            "image": {
+                "src":"", 
+                "altText":"",
+                "caption": ""
+            }
+        }
+    ],
+    "feedback" : {
+        "answers": [
+            {
+                "itemId": 0
+            },
+            {
+                "itemId": 2
+            }
+        ],
+        "responses": {
+            "correctCannedResponse":"",
+            "correctFeedback":"",
+            "partiallyCorrectCannedResponse":"",
+            "partiallyCorrectFeedback":"",
+            "incorrectCannedResponse":"",
+            "incorrectFeedback":"",
+            "finalIncorrectCannedResponse":"",
+            "finalIncorrectFeedback":""
+        },
+        "showAnswerOption": true,
+        "hasCustomAttempts": true,
+        "maxAttempts": 3
+    },
+    "additionalSettings": {
+        "vo" : {
+            "intro": "",
+            "correct":"",
+            "partiallyCorrect":"",
+            "incorrect":"",
+            "finalIncorrect":""
+        },
+        "audio": {
+            "src": "",
+            "schema": ""
+        },
+        "itemsAreImages": false,
+        "isPracticeInteraction": true,
+        "selectedLocale": "es-US", 
+        "selectedTheme": "custom-theme-two"
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "ids": [
+        "a", "b", "c", "d"
+    ],
+    "items": [
+        {
+            "itemId": 0,
+            "title": "a title 1",
+            "audio": {
+                "src": "./image1.png"
+            },
+            "active": true
+        },
+        {
+            "itemId": 1,
+            "title": "a title 2",
+            "audio": {
+                "src": "img2.jpg"
+            },
+            "active": true
+        }
+    ],
+    "additionalSettings": {
+        "selectedLocale": "en-US",
+        "audio": {
+            "src": "",
+            "schema": ""
+        }
+    }
+}

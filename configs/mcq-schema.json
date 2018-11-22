@@ -1,0 +1,135 @@
+{
+  "mappings": [
+    {
+      "from": "$.ActivityTitle",
+      "to": "$.setupArea.activityTitle"
+    },
+    {
+      "from": "$.QuestionStem",
+      "to": "$.setupArea.questionStem"
+    },
+    {
+      "from": "$.Tip",
+      "to": "$.setupArea.tip"
+    },    
+    {
+      "from": "$.Stimulus.text.src",
+      "to": "$.stimulus.text"
+    },
+    {
+      "from": "$.Stimulus.image.src",
+      "to": "$.stimulus.image.src"
+    },
+    {
+      "from": "$.Stimulus.image.altText",
+      "to": "$.stimulus.image.altText"
+    },
+    {
+      "from": "$.options[*].value",
+      "to": "$.items[*].itemId"
+    },
+    {
+      "from": "$.options[*].AnswerText",
+      "to": "$.items[*].text"
+    },
+    {
+      "from": "$.options[?(@.CorrectAnswer==true)].value",
+      "to": "$.feedback.answers[*].itemId"
+    },
+    {
+      "from": "$.FinalCannedResponse",
+      "to": "$.feedback.responses.correctCannedResponse"
+    },
+    {
+      "from": "$.FinalIncorrectFeedback",
+      "to": "$.feedback.responses.finalIncorrectFeedback"
+    },
+    {
+      "from": "$.MaxAttempts",
+      "to": "$.feedback.maxAttempts"
+    },
+    {
+      "from": "$.hasCustomAttempts",
+      "to": "$.feedback.hasCustomAttempts"
+    },
+    {
+      "from": "$.ShowAnswerOption",
+      "to": "$.feedback.showAnswerOption"
+    },
+    {
+      "from": "$.audioFile",
+      "to": "$.additionalSettings.audio.src"
+    },
+    {
+      "from": "$.audioSchema",
+      "to": "$.additionalSettings.audio.schema"
+    }
+  ],
+  "template": {
+    "setupArea": {
+      "activityTitle": "",
+      "questionStem": "",
+      "questionStemLabel": "",
+      "tip": "Tip"
+    },
+    "stimulus": {
+      "text": "",
+      "image": {
+        "src": "",
+        "altText": ""
+      },
+      "audio": {
+        "src": "",
+        "transcriptText": ""
+      }
+    },
+    "items": [
+      {
+        "itemId": 0,
+        "text": "One",
+        "image": {
+          "src": "",
+          "altText": "",
+          "caption": ""
+        }
+      }
+    ],
+    "feedback": {
+      "answers": [
+        {
+          "itemId": 0
+        }
+      ],
+      "responses": {
+        "correctCannedResponse": "",
+        "correctFeedback": "",
+        "partiallyCorrectCannedResponse": "",
+        "partiallyCorrectFeedback": "",
+        "incorrectCannedResponse": "",
+        "incorrectFeedback": "",
+        "finalIncorrectCannedResponse": "",
+        "finalIncorrectFeedback": ""
+      },
+      "showAnswerOption": true,
+      "hasCustomAttempts": true,
+      "maxAttempts": 3
+    },
+    "additionalSettings": {
+      "vo": {
+        "intro": "",
+        "correct": "",
+        "partiallyCorrect": "",
+        "incorrect": "",
+        "finalIncorrect": ""
+      },
+      "audio": {
+        "src": "",
+        "schema": ""
+      },
+      "itemsAreImages": false,
+      "isPracticeInteraction": true,
+      "selectedLocale": "es-US",
+      "selectedTheme": "custom-theme-two"
+    }
+  }
+}

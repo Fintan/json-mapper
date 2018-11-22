@@ -1,0 +1,15 @@
+{
+    "mappings": [
+        { "from": "$.audioFile",  "to": "$.additionalSettings.audio.src" },
+        { "from": "$.audioSchema",  "to": "$.additionalSettings.audio.schema" }
+    ],
+    "template": {
+        "additionalSettings": {
+            "selectedLocale": "en-US",
+            "audio": {
+                "src": "",
+                "schema": ""
+            }
+        }
+    }
+}

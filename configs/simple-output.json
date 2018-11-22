@@ -1,0 +1,9 @@
+{
+    "additionalSettings": {
+        "selectedLocale": "en-US",
+        "audio": {
+            "src": "../../audio/manifests/config.json",
+            "schema": "mrq_audio_schema.json"
+        }
+    }
+}

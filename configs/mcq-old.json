@@ -1,0 +1,77 @@
+{
+  "ActivityTitle": "What Do You Think?",
+  "QuestionStem": "(stem)",
+  "VOIntro": "",
+  "Tip": "",
+  "Summary": "",
+  "audioSchema": "mcq_audio_schema.json",
+  "audio": {},
+  "options": [
+    {
+      "AnswerText": "Vinny made the right decision by playing it safe.",
+      "CannedResponse": "",
+      "Feedback": "",
+      "VOFeedback": "",
+      "value": 0,
+      "CorrectAnswer": true
+    },
+    {
+      "AnswerText": "Vinny should care more about how his friends will perceive him.",
+      "CannedResponse": "",
+      "Feedback": "",
+      "VOFeedback": "",
+      "value": 1,
+      "CorrectAnswer": false
+    },
+    {
+      "AnswerText": "Vinny's actions reveal his internal strength.&nbsp;",
+      "CannedResponse": "",
+      "Feedback": "",
+      "VOFeedback": "",
+      "value": 2,
+      "CorrectAnswer": false
+    },
+    {
+      "AnswerText": "Vinny is a complete coward!",
+      "CannedResponse": "",
+      "Feedback": "",
+      "VOFeedback": "",
+      "value": 3,
+      "CorrectAnswer": false
+    }
+  ],
+  "FinalCannedResponse": "",
+  "FinalIncorrectFeedback": "",
+  "AudioFromRCE": true,
+  "qtype": "mcq",
+  "AllowFullScreen": true,
+  "AllowRefresh": true,
+  "ShowAnswerOption": true,
+  "SubmitToTeacherOption": false,
+  "optionsAreImages": false,
+  "hasInstantFeedback": false,
+  "hasCustomAttempts": false,
+  "MaxAttempts": 3,
+  "FinalVOFeedback": "",
+  "Stimulus": {
+    "text": {
+      "src": "Share your opinion of the ending, and see what your classmates have to say!"
+    },
+    "image": {
+      "src": "",
+      "altText": "",
+      "credits": ""
+    },
+    "audio": {
+      "src": "",
+      "caption": "",
+      "credit": ""
+    },
+    "video": {
+      "src": ""
+    }
+  },
+  "widgetType": "cpl-mcq",
+  "objectUuid": "d9c49d9efbd3499f92a747787450beae",
+  "audioFile": "../../widget_data/audio_data/d9c49d9efbd3499f92a747787450beae.json"
+}
