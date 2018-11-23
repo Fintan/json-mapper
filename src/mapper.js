@@ -1,12 +1,12 @@
 import jp from 'jsonpath';
 
-function map({ inputObj, schema, template }) {
-    return createFromTemplate({ inputObj, schema, template });
+function map({ inputObj, mappings, template }) {
+    return createFromTemplate({ inputObj, mappings, template });
 }
 
-function createFromTemplate({inputObj, schema, template}) {
+function createFromTemplate({inputObj, mappings, template}) {
     const baseObj = Object.assign({}, template);
-    schema.forEach(mapping => {
+    mappings.forEach(mapping => {
         var fromNodes = jp.nodes(inputObj, mapping.from);
         var toNodes = jp.nodes(baseObj, mapping.to);
         if(!fromNodes[0]) {
@@ -114,22 +114,8 @@ function safeSet(context, attribute, value) {
     }
 }
 
-
-
-/**
-* Determine type of object.
-*
-* @param {object} obj
-* @returns {string} string,number,object,boolean,array
-*/
-/*function type(obj) {
-    return Array.isArray(obj) ? 'array' : typeof obj;
-}*/
-
-
 export {
     map,
     getValue,
     setValue
 };
-

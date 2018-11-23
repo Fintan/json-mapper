@@ -41,7 +41,7 @@ test('can assign a value to an attribute', () => {
 test('converts simple input to desired output', () => {
     const result = map({ 
         inputObj: simpleInput, 
-        schema: simpleSchema.mappings,
+        mappings: simpleSchema.mappings,
         template: simpleSchema.template
     });
     expect(result).toBeDefined();
@@ -53,7 +53,7 @@ test('throws an error if mappings return undefined', () => {
     expect(() => {
         map({ 
             inputObj: simpleInput, 
-            schema: [{ "from": "$.audioFile",  "to": "$.does.not.exist" }],
+            mappings: [{ "from": "$.audioFile",  "to": "$.does.not.exist" }],
             template: simpleSchema.template
         });
     }).toThrow();
@@ -61,7 +61,7 @@ test('throws an error if mappings return undefined', () => {
     expect(() => {
         map({ 
             inputObj: simpleInput, 
-            schema: [{ "from": "$.does.not.exist",  "to": "$.additionalSettings.audio.src" }],
+            mappings: [{ "from": "$.does.not.exist",  "to": "$.additionalSettings.audio.src" }],
             template: simpleSchema.template
         });
     }).toThrow();
@@ -70,7 +70,7 @@ test('throws an error if mappings return undefined', () => {
 test('converts input containing arrays to desired output', () => {
     const result = map({ 
         inputObj: arraySampleInput, 
-        schema: arraySampleSchema.mappings,
+        mappings: arraySampleSchema.mappings,
         template: arraySampleSchema.template
     });
     expect(result).toBeDefined();
@@ -83,7 +83,7 @@ test('converts input containing arrays to desired output', () => {
 test('converts a legacy mcq config to the version 2 structure', () => {
     const result = map({ 
         inputObj: mcqInput, 
-        schema: mcqSchema.mappings,
+        mappings: mcqSchema.mappings,
         template: mcqSchema.template
     });
     expect(result).toBeDefined();

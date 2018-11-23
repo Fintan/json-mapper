@@ -6,7 +6,7 @@ import { writeConf } from './write-conf';
 test('can create a config file using output from map module', () => {
     const result = map({ 
         inputObj: mcqInput, 
-        schema: mcqSchema.mappings,
+        mappings: mcqSchema.mappings,
         template: mcqSchema.template
     });
     expect(() => {
